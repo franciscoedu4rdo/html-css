@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Indie+Flower&family=Monomaniac+One&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @font-face {
     font-family: "Android";
-    src: url(fontes/idroid.otf) format('opentype');
+    src: url(../fontes/idroid.otf) format('opentype');
     font-weight: normal;
 }
 
@@ -100,7 +100,7 @@ main {
 main h1 { 
     color: var(--cor5);
     font-family: var(--fonte-adroid);
-
+    text-align: center;
 }
 
 main p {
@@ -157,7 +157,7 @@ main a:hover {
 h2 {
     font-family: var(--fonte-adroid);
     color: var(--cor4);
-    font-size: 1.3em;
+    font-size: 1.8em;
     background-image: linear-gradient(to right, var(--cor0), transparent);
     text-indent: 8px;
     font-weight: normal;
