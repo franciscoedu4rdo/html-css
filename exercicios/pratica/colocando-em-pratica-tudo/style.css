@@ -1,0 +1,122 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: #b6a158;
+    text-align: justify;
+    text-indent: 30px;
+    font-family: "Playwrite GB J", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h1{
+    color: #864626;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    background-color: white;
+    text-decoration: overline;
+    border-radius: 13px;
+}
+
+.live {
+    text-indent: 30px;
+}
+
+main {
+     border-radius: 80px;
+    box-shadow: 5px 5px 15px #241c23b7;
+    width: 1500px;
+    padding: 20px;
+    margin: auto;
+}
+
+span {
+    margin-left: 20px;
+}
+/* Configuração da caixa que junta os dois produtos lado a lado */
+.imagens-wrapper {
+    display: flex;             /* Ativa o Flexbox: faz os filhos ficarem em linha automaticamente */
+    justify-content: center;   /* Centraliza os produtos horizontalmente no meio da tela */
+    gap: 40px;                 /* Cria um espaçamento exato de 40px entre um produto e o outro */
+    padding: 20px;             /* Adiciona um espaço interno de respiro nas bordas do bloco */
+}
+
+/* O quadrado individual do produto (o "Card") */
+.product-card {
+    background-color: #ffffff; /* Define a cor de fundo do quadrado como branco */
+    border: 1px solid #e0e0e0; /* Cria uma borda fina cinza para desenhar o quadrado */
+    border-radius: 12px;       /* Arredonda os 4 cantos do quadrado do produto */
+    padding: 10px;             /* Cria um espaçamento interno para os elementos não colarem na borda */
+    margin: 10;                 /* Zera as margens padrões que a tag <figure> traz no navegador */
+    width: 240px;              /* Trava a largura do quadrado (todos os produtos terão o mesmo tamanho) */
+    
+    display: flex;             /* Ativa o Flexbox interno para organizar os itens de cima para baixo */
+    flex-direction: column;    /* Altera o alinhamento para coluna (foto em cima, texto embaixo) */
+    align-items: center;       /* Centraliza horizontalmente tudo que estiver dentro do card */
+    
+    /* CONTROLADOR DE ANIMAÇÃO: Faz os efeitos de hover (sombra, movimento) acontecerem de forma 
+       suave durando 0.3 segundos, em vez de dar um tranco seco na tela */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    
+    cursor: pointer;           /* Transforma a seta do mouse no ícone de "mãozinha" ao passar por cima */
+}
+
+/* INTERATIVIDADE: O que acontece com o quadrado quando o mouse passa por cima (:hover) */
+.product-card:hover {
+    transform: translateY(-20px);               /* Move o card 8 pixels para cima no eixo Y (efeito flutuar) */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Aplica uma sombra escura suave embaixo dando efeito de relevo */
+    border-color: #9d8544;                     /* Muda a cor da bordinha cinza para o tom dourado do site */
+}
+
+/* A moldura da imagem dentro do quadrado */
+.image-box {
+    width: 100%;               /* Faz a moldura ocupar toda a largura disponível do card */
+    height: 290px;             /* Trava a altura máxima que a foto pode ter */
+    display: flex;             /* Usa flexbox para centralizar a foto caso ela seja menor */
+    align-items: center;       /* Centraliza a imagem verticalmente na moldura */
+    justify-content: center;    /* Centraliza a imagem horizontalmente na moldura */
+    overflow: hidden;          /* Corta qualquer pedaço da imagem que tente passar do limite dos 220px */
+    border-radius: 15px;        /* Arredonda de leve os cantos da foto */
+}
+
+/* Comportamento da Tag da Imagem real */
+.product-card img {
+    max-width: 100%;           /* Impede a imagem de estourar a largura da moldura */
+    max-height: 100%;          /* Impede a imagem de estourar a altura da moldura */
+    object-fit: cover;         /* Encaixa a foto no espaço disponível sem achatar ou distorcer ela */
+    transition: transform 0.5s ease; /* Prepara a imagem para fazer uma transição suave de tamanho */
+}
+
+/* EFEITO EXTRA: Faz a foto dar um micro-zoom quando o mouse entra no card */
+.product-card:hover img {
+    transform: scale(1.09);    /* Aumenta o tamanho da imagem em 3% criando um efeito dinâmico */
+}
+
+/* Estilização do texto do título do produto (legenda) */
+.product-title {
+    margin-top: 15px;          /* Empurra o texto para baixo para não colar na foto */
+    font-size: 15px;           /* Define o tamanho da letra */
+    font-weight: 600;          /* Deixa a letra com uma espessura levemente mais grossa/negrito */
+    color: #333333;            /* Define a cor do texto para um cinza escuro confortável */
+    text-transform: capitalize;/* Transforma automaticamente a primeira letra da legenda em Maiúscula */
+}
+
+/* Estilização do texto do Preço do produto */
+.product-price {
+    margin-top: 8px;           /* Dá um espacinho em relação ao título do produto */
+    font-size: 16px;           /* Deixa o preço com a letra um pouquinho maior que o título */
+    font-weight: bold;         /* Coloca o preço em negrito forte para destacar */
+    color: #9d8544;            /* Define a cor do preço em dourado para dar um destaque comercial */
+}

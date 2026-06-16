@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+ body{ 
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgrey;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+        footer{
+            color: white;
+            background-color: black;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        
+        footer > p {
+            margin: 0px;
+        }
+
+        article{
+            background-color: burlywood;
+            padding: 5px;
+            margin: 1px;
+        }
+        
+        article > aside {
+            background-color: rgba(153, 125, 89, 0.808);
+        }
+
+        nav {
+            background-color: lightgrey;
+            padding: 5px;
+            box-shadow: 1px 1px 1px black;
+           
+            /* BOX-SHADOW
+            o primero termo 1px - deslocamento horizontal
+            o segundo termo 1px - deslocamento vertical
+            o terceiro termo 1px - espalhamento 
+            o quarto termo - a cor da sombra
+            */
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        aside {
+            text-align: center;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%; /*pode colocar em porcetagem também*/
+        }

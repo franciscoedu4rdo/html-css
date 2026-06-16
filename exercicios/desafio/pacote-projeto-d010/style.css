@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #84E1AD;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    margin: 0px;
+}
+
+header{
+    text-align: center;
+    background-color: #1A5C38;
+    background-image: linear-gradient(#3CD681, #1A5C38);
+    margin-top: -21px;
+    padding-top: 10px;
+    color: white;
+    
+}
+
+header > p{
+    text-align: center;
+}
+
+h1.diferente{
+   color: #21613E;
+   font-size: 50px;
+   font-family: 'idroid';
+   margin: 0px;
+}
+
+h2{
+    background-image: linear-gradient(to right, #E1F5EA, #ffffff69);
+    color: #21613E;
+    font-family: 'idroid';
+}
+
+h3{
+    background-color: #2FA866;
+    margin-left: -18px;
+    margin-right: -18px;
+    padding: 16px 0px 16px 16px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: white;
+}
+
+nav {
+    text-align: left;
+    padding: 10px;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding-left: 15px;
+}
+
+nav a:hover {
+   text-decoration: underline;
+}
+
+p{
+    text-align: justify;
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    min-width: 320px;
+    max-width: 800px;
+    padding: 10px;
+}
+
+main > p{
+    text-indent: 1.25cm;
+}
+
+img {
+    width: 100%;
+}
+
+.novo{
+    box-shadow: 0px 0px 1px black;
+}
+
+.estranha {
+    text-indent: 1.25cm;
+}
+
+.link{
+    color: #0b6e38;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.social{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.video {
+    background-color: #1A5C38;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    display: flex;
+}
+
+article{
+    background-color: #C5EBD6;
+    border: 10px;
+    padding: 0px 19px 7px 19px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.164);
+}
+
+footer{
+    background-color: #21613E;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+ul.lista-visto {
+    list-style-type: none; /* Some com a bolinha preta padrão */
+    padding-left: 20px;    /* Dá o espaço necessário para o símbolo caber */
+    font-weight: 600;
+
+    /* Mágica aqui: divide a lista em 2 colunas */
+    column-count: 2; 
+    
+    /* Opcional: define o espaço de separação entre as duas colunas */
+    column-gap: 40px;
+}
+
+ul.lista-visto li::before {
+    content: "✓ ";          /* Injeta o símbolo de visto antes do texto */
+    color: #21613E;        /* Deixa o visto com o verde escuro do seu projeto */
+    font-weight: bold;     /* Deixa o símbolo mais gordinho/destacado */
+    margin-right: 8px;     /* Dá um espacinho entre o visto e o texto do item */
+}

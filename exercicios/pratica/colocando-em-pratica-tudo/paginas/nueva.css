@@ -1,0 +1,69 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Monomaniac+One&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: "Monomaniac One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #4E6E5D;
+  font-style: italic;
+  flex-flow: column;
+  font-size: 20px;
+}
+
+h1 {
+    font-family: "Work Sans", sans-serif;
+    color: #413C58;
+    text-align: center;
+}
+
+p {
+    background-attachment: fixed;
+    background-color: #EBF2FA;
+    padding: 50px;
+    text-align: justify;
+    text-indent: 30px;
+    opacity: 0.9;
+    transition: opacity 0.4s ease;
+    border: #413C58;
+    box-shadow: 0px 0px 25px #413C58;
+    border-radius: 90px;
+}
+
+span {
+    margin-left: 30px;
+}
+
+/* Deixa o texto com uma cor diferente e a mãozinha para o usuário saber que tem algo ali */
+.texto-interativo {
+    color: #070a09;
+    cursor: pointer;
+    position: relative; /* Cria uma âncora para a imagem não avacalhar o resto do texto */
+    font-weight: 300;
+}
+/* 1. ESTADO NORMAL: Esconde a imagem completamente */
+.imagem-escondida {
+    display: none;       /* Faz a imagem sumir da tela */
+    position: absolute;  /* Faz a imagem "flutuar" sem empurrar as palavras do lado */
+    top: 35px;           /* Joga a imagem um pouco para baixo do texto */
+    left: 50%;             /* Alinha a imagem com o começo da palavra */
+    border-radius: 12px;  /* Deixa os cantos da imagem arredondados */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* Dá uma sombra para parecer um card flutuante */
+    z-index: 999;        /* Garante que a imagem vai ficar por cima de qualquer outro texto */
+    
+    transform: translateX(-50%);
+    width: 250px;
+}
+
+/* 2. ESTADO HOVER: Quando o mouse passar no TEXTO, a IMAGEM aparece! */
+.texto-interativo:hover .imagem-escondida {
+    display: block;      /* Faz a imagem aparecer magicamente! */
+}
+
+.texto-interativo::after {
+    content: " ➔"; /* Espaço antes para não colar na palavra */
+    color: blue;
+    transition: all 0.3s ease; /* Para fazer efeito suave */
+}
+
+
