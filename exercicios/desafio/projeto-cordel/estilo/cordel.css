@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Passion+One:wght@400;700;900&display=swap');
+
+
+header{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+body {
+    font-family: "Comic Neue", cursive;
+    font-weight: 600;
+    font-size: 40px;
+    font-style: italic;
+    background-color: white;
+    margin: 0px;
+}
+
+.Poppot{
+    text-align: left;
+    line-height: 2em;
+    
+}
+
+.vadia {
+    padding-right: 12em;
+}
+
+#q1{
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#q2{
+   background-image: url(../imagens/background001.jpg);
+   background-size: cover;
+   background-position: center center;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   
+}
+
+section{
+    height: 96vh;
+    padding: 93px 0px 93px 20px;
+    background-color: rgba(0, 0, 0, 0.178);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.329);
+   
+}
+
+article{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.356);
+    box-shadow: 1px 10px 10px black;
+    color: white;
+    padding: 0px 80px 0px 0px;
+}
+
+#q3{
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#q4{
+    background-image: url(../imagens/background002.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+
