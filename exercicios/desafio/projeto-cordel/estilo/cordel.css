@@ -2,37 +2,70 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Passion+One:wght@400;700;900&display=swap');
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 header{
     text-align: center;
     background-color: black;
     color: white;
+    font-family: 'Passion One';
+    font-weight: 600;
+    padding-top: 0px;
+    
+}
+
+header h1{
+    margin-top: 0px;
+    padding-top: 20px;
+    margin-bottom: 15px;
+}
+
+p{
+    padding-bottom: 30px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 body {
     font-family: "Comic Neue", cursive;
     font-weight: 600;
-    font-size: 40px;
+    /*font-size: 40px;*/
+    font-size: clamp(20px, 4vw, 40px);
     font-style: italic;
     background-color: white;
     margin: 0px;
+    min-height: 100vh;
+    /*font-size: 5vw;*/
+    min-width: 300px;
+    
 }
 
 .Poppot{
     text-align: left;
-    line-height: 2em;
-    
+    line-height: 1.2em;
 }
 
-.vadia {
-    padding-right: 12em;
-}
 
 #q1{
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-left: 30px;
+    margin-bottom: 20px;
 }
 
 #q2{
@@ -42,22 +75,35 @@ body {
    background-attachment: fixed;
    background-repeat: no-repeat;
    
-}
-
-section{
-    height: 96vh;
-    padding: 93px 0px 93px 20px;
-    background-color: rgba(0, 0, 0, 0.178);
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.329);
    
 }
 
+section{
+    padding: 10vh 0px;
+    min-height: 96vh; 
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.178);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.329);
+    justify-content: flex-start;
+    align-items: center;
+}
+
 article{
-    display: inline-block;
+    display: block;
+    margin-left: 30px;
     background-color: rgba(0, 0, 0, 0.356);
     box-shadow: 1px 10px 10px black;
     color: white;
-    padding: 0px 80px 0px 0px;
+    padding: 20px 20px 20px 30px;
+    /*padding-right: 13px;
+    height: 152px;
+    width: 530px;
+    padding-bottom: 711px;
+    padding-top: 0px;
+    padding-left: 21px;*/
+    width: 80%;
+    max-width: 450px; 
+    box-sizing: border-box;
 }
 
 #q3{
@@ -65,6 +111,7 @@ article{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    padding-left: 30px;
 }
 
 #q4{
@@ -75,5 +122,23 @@ article{
     background-repeat: no-repeat;
 }
 
+#q5 {
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+
+footer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: normal;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 0.6em;
+    padding-top: 0px;
+}
+
+.idi{
+    padding: 10px;
+}
 
 
