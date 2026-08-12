@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    .material-symbols-outlined{
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav ul li{
+        display: inline-block;
+    }
+}
+
+@media print{
+    body {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .material-symbols-outlined{
+        display: none;
+    }
+
+
+    h2{
+        text-align: center;
+        padding-bottom: 80px;
+    }
+
+    p {
+        margin-top: 20px;
+    }
+}
